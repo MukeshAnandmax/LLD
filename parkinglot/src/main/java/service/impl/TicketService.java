@@ -12,6 +12,7 @@ import repository.impl.GateRepository;
 import repository.impl.TicketRepository;
 import repository.impl.VehicleRepository;
 import service.ITicketService;
+import service.IVehicalService;
 import strategies.spotAssignmentStrategy.SpotAssignmentStrategy;
 
 import java.time.LocalDateTime;
@@ -22,11 +23,11 @@ public class TicketService implements ITicketService {
     private final  SpotAssignmentStrategy spotAssignmentStrategy;
     private final IGateRepository gateRepository;
     private final IVehicleRepository vehicleRepository;
-    private  final  VehicleService vehicleService;
+    private  final IVehicalService vehicleService;
     private final ITicketRepository ticketRepository;
     private final IParkingLotRepository parkingLotRepository;
 
-    public TicketService(SpotAssignmentStrategy spotAssignmentStrategy, IGateRepository gateRepository, IVehicleRepository vehicleRepository, VehicleService vehicleService, ITicketRepository ticketRepository, IParkingLotRepository parkingLotRepository) {
+    public TicketService(SpotAssignmentStrategy spotAssignmentStrategy, IGateRepository gateRepository, IVehicleRepository vehicleRepository, IVehicalService vehicleService, ITicketRepository ticketRepository, IParkingLotRepository parkingLotRepository) {
         this.spotAssignmentStrategy = spotAssignmentStrategy;
         this.gateRepository = gateRepository;
         this.vehicleRepository = vehicleRepository;

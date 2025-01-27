@@ -11,7 +11,7 @@ public class VehicleService implements IVehicalService {
 
     private final IVehicleRepository vehicleRepository;
 
-    public VehicleService(VehicleRepository vehicleRepository) {
+    public VehicleService(IVehicleRepository vehicleRepository) {
         this.vehicleRepository = vehicleRepository;
     }
 
