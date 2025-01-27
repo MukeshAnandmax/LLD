@@ -6,6 +6,6 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Vehicle extends BaseModel{
-    private int vehicleNumber;
+    private String vehicleNumber;
     private VehicleType vehicleType;
 }

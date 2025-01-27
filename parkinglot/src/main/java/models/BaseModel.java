@@ -1,7 +1,11 @@
 package models;
 
-import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.time.LocalDateTime;
+@Setter
+@Getter
 public class BaseModel {
     private  long id;
     private LocalDateTime CreatedAt;

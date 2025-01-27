@@ -11,4 +11,5 @@ public class GenerateTicketResponseDto {
     private  long ticketId;
     private String operatorName;
     private  int spotNumber;
+    private ResponseStatus responseStatus;
 }
